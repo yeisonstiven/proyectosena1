@@ -1,79 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title> Registro Software Complent </title>
-<meta charset="utf-8">
-<link rel="shortcut icon" type="png" href="logo.jpg">
-
-    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
-    <div class="container">
-
-            <div class="freshdesignweb-top">
-                <a href="http://www.freshdesignweb.com" > <h1> Volver </h1> </a>
-                <div class="clr"></div>
-            </div>
-            
+	<title>Inicio sesión - Software Complent </title>
+	<meta charset="UTF-8">
+	<link rel="shorcut icon" type="jpg" href="login/logo.jpg">
+	<meta name="viewport" content="widht=device-width, userscalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="login/estilos.css">
 </head>
 <body>
-         
-        <br><br>
-        <center> <h1> Registro Software Complent </h1> </center> <br><br>
-        <center> <img src="logo.jpg" width="100" height="center"></center> <br> <br>
-        <body background="bg2.jpg">
-
-        
-        <div  class="form">
-        <form id="contactform"> 
-          <p class="contact"><label for="name"> Nombres </label></p> 
-          <input id="name" name="name" placeholder="Nombres" required="" tabindex="1" type="text"> 
-            
-          <p class="contact"><label for="name"> Apellidos </label></p>
-            <input id="name" name="name" placeholder="Apellidos " required="" tabindex="1" type="text">
-          
-            <p class="contact"><label for="name"> Tipo de documento </label></p>
-            <select class="select-style documento" name="documento">
-            <option value="Select"> Seleccione... </option>
-            <option value="TI"> Tarjeta de identidad </option>
-            <option value="CC"> Cédula de ciudadania </option>
-            <option value="P">  Pasaporte </option>
-            <option value="CE"> Cédula extranjeria </option>
-            </select> <br><br>
-
-          <p class="contact"><label for="name"> Número de Documento </label></p>
-            <input id="name" name="name" placeholder="Documento" required="" tabindex="1" type="text">
-           
-          <p class="contact"><label for="telefono">Telefono</label></p> 
-          <input id="telefono" name="telefono" placeholder="7152229" required="1" type="tel"> 
-
-          <p class="contact"><label for="email">Email</label></p> 
-          <input id="email" name="email" placeholder="software@complent.com" required="1" type="email"> 
-                   
-                <p class="contact"><label for="password"> Crear una contraseña </label></p> 
-          <input type="password" id="password" name="password" required=""> 
-                <p class="contact"><label for="repassword"> Confirmar contraseña </label></p> 
-          <input type="password" id="repassword" name="repassword" required=""> <br>
-                   
-
-           
-           <p class="contact"><label for="name"> Tipo de vehiculo </label></p>
-            <select class="select-style documento" name="tipovehiculo">
-            <option value="Select"> Seleccione... </option>
-            <option value="01"> Automovil </option>
-            <option value="02"> Motocicleta </option>
-            <option value="03"> Pesado </option>
-            <option value="03"> Otro </option>
-
-            </select> <br><br>
-
-
-            <input class="buttom" name="submit" id="submit" tabindex="5" value="Registrese!" type="submit">   
-            
-
-
-   </form> 
-</div>      
-</div>
+		<p><h2><font color="white"><a href="#" style="text-decoration:none;color:white;">Volver</font></h2></p></a>
+		<form action="" method="post" class="login">
+			<h2><font color="white">Software Complent</font></h2>
+			<center><img src="login/logo.jpg" width="100" height="100"></center>
+			<body background="login/bg2.jpg"></body>
+				<div><label></label><input name="user" placeholder="&#127925; Usuario" type="text" required ></div> 
+				<div><label></label><input name="password" placeholder="&#127925; Contraseña" type="password" required></div> 
+				
+				<div><input name="Ingresar" type="submit" value="Ingresar"></div>
+				<br>
+				<center><h4><font color="white">¿No tienes cuenta? registrate</font> <a href="#" target=".blank" style="text-decoration:none;color:red;"> Aquí </a></h4></center>
+		</form>
 
 </body>
 </html>
