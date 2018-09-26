@@ -1,0 +1,34 @@
+select v.idVehiculo,v.Placa, color.NombreColor as "Color Vehiculo", tarifas.nombre as "Tipo Tarifa", tarifas.valor as "Valor Tarifa", tipov.TipoVehiculo as "Tipo Vehiculo"
+from vehiculo v inner join color on color.idColor = v.idColor
+inner join tarifas on tarifas.idtarifas = v.idtarifas
+inner join tipov on tipov.idTipoV = v.idtipov;
+
+
+select v.idVehiculo,v.Placa, color.NombreColor as "Color Vehiculo", tarifas.nombre as "Tipo Tarifa", tarifas.valor as "Valor Tarifa", tipov.TipoVehiculo as "Tipo Vehiculo"
+from vehiculo v inner join color on color.idColor = v.idColor
+inner join tarifas on tarifas.idtarifas = v.idtarifas
+inner join tipov on tipov.idTipoV = v.idtipov and v.idVehiculo=124;
+
+select p.cedula, p.nombre, p.apellido, p.fecha_nacimiento, genero.nombre, rol.nombrerol, p.telefono
+from persona p inner join genero on p.idGenero=genero.idGenero
+inner join rol on p.idRol = rol.idRol;
+
+select  f.idfactura, r.idregistro, p.cedula, p.nombre, p.apellido, p.telefono, p.nombre, ro.nombrerol, r.hora_e, r.hora_s, v.placa, v.observaciones, c.NombreColor, tp.tipovehiculo, tr.valor 
+from factura f inner join registro r
+on f.idregistro=r.idregistro inner join persona p
+on r.persona_cedula = p.cedula inner join rol ro 
+on ro.idrol = p.idrol inner join vehiculo v 
+on r.idvehiculo = v.idvehiculo inner join tarifas tr 
+on tr.idtarifas = v.idtarifas inner join color c 
+on c.idcolor = v. idColor inner join tipov tp 
+on tp.idtipov = v.idtipov;
+
+select r.idregistro, p.cedula, p.nombre, p.apellido, p.telefono, p.nombre, ro.nombrerol, r.hora_e, r.hora_s, v.placa, v.observaciones, c.NombreColor, tp.tipovehiculo, tr.valor 
+from factura f inner join registro r
+on f.idregistro=r.idregistro inner join personas p
+on r.persona_cedula = p.cedula inner join rol ro 
+on ro.idrol = p.idrol inner join vehiculo v 
+on r.idvehiculo = v.idvehiculo inner join tarifas tr 
+on tr.idtarifas = v.idtarifas inner join color c 
+on c.idcolor = v. idColor inner join tipov tp 
+on tp.idtipov = v.idtipov;
